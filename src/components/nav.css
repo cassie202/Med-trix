@@ -1,0 +1,61 @@
+.navBar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+.title {
+  color: black;
+}
+.nav-items {
+}
+.home {
+  margin: 10px;
+  color: #3a3a3a;
+  text-decoration: none;
+}
+.home:active {
+  text-decoration: underline;
+  color: black;
+}
+.about {
+  margin: 10px;
+  color: #3a3a3a;
+  text-decoration: none;
+}
+.about:active {
+  text-decoration: underline;
+  color: black;
+}
+.find-care {
+  margin: 10px;
+  color: #3a3a3a;
+  text-decoration: none;
+}
+.find-care:active {
+  text-decoration: underline;
+  color: black;
+}
+.nav-btn {
+  padding: 5px 8px;
+}
+.login-btn {
+  margin: 15px;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  background-color: #256061;
+  cursor: pointer;
+}
+.signUp-btn {
+  margin: 12px;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  background-color: #256061;
+  cursor: pointer;
+}

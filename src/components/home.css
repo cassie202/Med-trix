@@ -1,0 +1,108 @@
+.home-container {
+  background-color: #dfe4eb;
+  /* min-height: 100vh; */
+}
+.hero-container {
+  min-height: 400px;
+  background-image: url("https://images.unsplash.com/photo-1533042789716-e9a9c97cf4ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aG9zcGl0YWwlMjBidWlsZGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60");
+  background-size: "cover";
+  background-repeat: repeat-x;
+}
+.hero-text {
+  color: white;
+  font-weight: 400px;
+  width: 400px;
+  padding: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+.hero-paragraph {
+  color: white;
+  font-size: 10px;
+  padding-top: 0;
+  padding-inline: 45px;
+  margin-top: 0;
+}
+.get-started-btn {
+  background-color: #66a0ad;
+  border: 2px solid #ffff;
+  color: #ffff;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 25px;
+  margin-inline: 40px;
+}
+.learn-more-btn {
+  color: #ffff;
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  margin-inline: 40px;
+  text-decoration: none;
+}
+.learn-more-btn:hover {
+  color: blue;
+}
+.search-hospital-input {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 0;
+}
+.search-hospital-text {
+  color: #ffff;
+  font-weight: 400px;
+  text-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.search-input {
+  padding: 10px 10px;
+  width: 600px;
+  border-radius: 30px;
+  border: none;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
+span.Find-text {
+  color: #2b7988;
+}
+.welcome-container {
+  background-color: #fbfbfb;
+  min-height: 100vh;
+  margin-top: 0;
+}
+.welcome-text {
+  margin-top: 0;
+}
+.search-container {
+  background-color: #387174;
+  min-height: 100px;
+  margin-top: 0;
+}
+.search-doctors {
+  margin-top: 0;
+}
+.How-it-works {
+  background-color: #fbfbfb;
+  min-height: 100px;
+  margin-top: 0;
+}
+.find-hospitals {
+  margin-top: 0;
+}
+.qualified-doctors {
+  background-color: #393d45;
+  min-height: 100px;
+  margin-top: 0;
+}
+.testimonials {
+  background-color: #fbfbfb;
+  min-height: 100vh;
+  margin-top: 0;
+}
+.care-finder {
+  background-color: #393d45;
+  min-height: 100px;
+  margin-top: 0;
+}
