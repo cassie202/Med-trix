@@ -5,6 +5,7 @@
   justify-content: space-around;
   align-items: center;
   color: white;
+  padding: 12px;
 }
 .title {
   color: black;
@@ -45,7 +46,6 @@
   margin: 15px;
   padding: 5px 15px;
   border: none;
-  border-radius: 3px;
   color: white;
   background-color: #256061;
   cursor: pointer;
@@ -54,7 +54,6 @@
   margin: 12px;
   padding: 5px 15px;
   border: none;
-  border-radius: 3px;
   color: white;
   background-color: #256061;
   cursor: pointer;

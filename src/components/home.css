@@ -1,5 +1,5 @@
 .home-container {
-  background-color: #dfe4eb;
+  /* background-color: #dfe4eb; */
   /* min-height: 100vh; */
 }
 .hero-container {
@@ -61,40 +61,205 @@
   border-radius: 30px;
   border: none;
   margin: auto;
+  margin-bottom: 30px;
   text-align: center;
   justify-content: center;
+  background-color: #dfe4eb;
 }
-span.Find-text {
+.search-hospital-text {
   color: #2b7988;
 }
 .welcome-container {
   background-color: #fbfbfb;
   min-height: 100vh;
   margin-top: 0;
+  background-size: "cover";
+  background-repeat: no-repeat;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
-.welcome-text {
+.image-container {
+  display: flex;
+  margin-bottom: 0;
+}
+.welcome-text-title {
   margin-top: 0;
+  color: #2b7988;
 }
-.search-container {
-  background-color: #387174;
+.welcome-text-paragraph {
+  line-height: 1.5;
+}
+.welcome-image {
+  margin-top: 300px;
+  width: 150px;
+}
+.welcome-text-section {
+  margin-top: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.welcome-text-container {
+  width: 400px;
+  justify-content: space-;
+}
+.our-service-button {
+  padding: 10px 15px;
+  background-color: #256061;
+  color: #ffff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.icon-container {
+  background-color: #ffff;
+  min-height: 100px;
+  margin-top: 300px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  cursor: pointer;
+}
+.icon {
+  margin-top: 10px;
+}
+.hospital-icon {
+  background-color: #dfe4eb;
+  width: 200px;
+  border-radius: 10px;
+}
+.doctor-icon {
+  background-color: #dfe4eb;
+  width: 200px;
+  border-radius: 10px;
+}
+.export-icon {
+  background-color: #dfe4eb;
+  width: 200px;
+  border-radius: 10px;
+}
+.share-icon {
+  background-color: #dfe4eb;
+  width: 200px;
+  border-radius: 10px;
+}
+.icon-title {
+}
+.search-hospital-paragraph {
+  padding: 20px;
+}
+.icon-paragraph {
+  font-size: 12px;
+  font-weight: small;
+}
+.how-it-works {
+  background-color: #393d45;
+  border-radius: 50%;
+  min-height: 200px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  position: relative;
+  display: flex;
+}
+.how-it-works-title {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+.how-it-works-image {
+  width: 70px;
+  /* height: 70px; */
+  border-radius: 50%;
+  position: relative;
+  left: 30;
+  top: 10;
+}
+.how-it-works-find-hospital-container {
+  width: 300px;
+  color: #ffff;
+  margin-left: 30px;
+  text-align: center;
+}
+.how-it-works-find-hospital-title {
+  margin-bottom: 2px;
+  margin-top: 2px;
+  color: #2b7988;
+}
+.how-it-works-find-hospital-paragraph {
+  font-size: 12px;
+  width: 250px;
+}
+.save-hospital-image {
+  width: 70px;
+  border-radius: 50%;
+  margin-top: -20px;
+  position: relative;
+}
+.save-hospital-container {
+  color: #ffff;
+  width: 300px;
+  text-align: center;
+}
+.save-hospital-title {
+  color: #2b7988;
+}
+.save-hospital-paragraph {
+  font-size: 12px;
+  width: 250px;
+}
+.qualified-doctors-title {
+  margin-left: 100px;
+}
+.qualified-doctors-main {
+  display: flex;
+  justify-content: space-around;
   min-height: 100px;
   margin-top: 0;
 }
-.search-doctors {
-  margin-top: 0;
-}
-.How-it-works {
-  background-color: #fbfbfb;
-  min-height: 100px;
-  margin-top: 0;
-}
-.find-hospitals {
-  margin-top: 0;
+.qualified-doctors-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
 }
 .qualified-doctors {
-  background-color: #393d45;
-  min-height: 100px;
-  margin-top: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 50px;
+}
+.book-appointment-form-section {
+  width: 500px;
+}
+.book-appointment-title {
+  background-color: #256061;
+  color: #ffff;
+  margin-bottom: 10px;
+  padding: 10px 35px;
+  width: 50%;
+  border-radius: 8px;
+  border: none;
+}
+.book-appointment-input {
+  padding: 10px 30px;
+  margin: 5px;
+  width: 50%;
+  border-radius: 8px;
+  border: none;
+  background-color: #e0e4ec;
+}
+.submit-appointment {
+  background-color: #256061;
+  color: #ffff;
+  padding: 10px 35px;
+  width: 50%;
+  border-radius: 8px;
+  border: none;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 .testimonials {
   background-color: #fbfbfb;
