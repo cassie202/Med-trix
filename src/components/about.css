@@ -1,0 +1,49 @@
+.about-main {
+  background-image: url("https://media.istockphoto.com/id/1021670950/photo/health-worker-holding-patients-hand.jpg?s=612x612&w=0&k=20&c=cBZCG4mSlGgq9mRMSzTBAXabd7kjSURnlF2aNGjtLtc=");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.about-heading {
+  color: #2b7988;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about-paragraph {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .about-main {
+    min-height: auto;
+  }
+
+  .about-container {
+    max-width: 100%;
+    border-radius: 0;
+    margin-top: 20px;
+  }
+
+  .about-heading {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .about-paragraph {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}

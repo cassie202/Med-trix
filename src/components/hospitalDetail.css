@@ -1,0 +1,19 @@
+.hospital-detail-container {
+  width: 900px;
+  margin: 50px auto;
+  /* background-color: #256061; */
+
+  display: flex;
+  flex-direction: column;
+}
+.hospital-detail-info {
+  text-align: left;
+  color: #2b7988;
+}
+.hospital-detail-img {
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.arrow-back-img {
+  font-weight: 700;
+}

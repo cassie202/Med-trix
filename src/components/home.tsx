@@ -25,20 +25,14 @@ const HomePage: React.FunctionComponent<HomePageProps> = (props) => {
         <p className="hero-paragraph">
           Discover your perfect care: Find your hospital anytime, any day!
         </p>
-        <button className="get-started-btn">Get Started</button>
+        <Link to="/findCare">
+          <button className="get-started-btn">Get Started</button>
+        </Link>
+        {/* <Link className="find-care" to = 'findCare'>Find Care */}
         <Link className="learn-more-btn" to="">
           Learn More..
         </Link>
       </div>
-      <div className="search-hospital-input">
-        <h3 className="search-hospital-text">Find a nearby hospital </h3>
-        <input
-          className="search-input"
-          type="search"
-          placeholder="Gwarimpa General hospital, Gwarimpa Abuja"
-        />
-      </div>
-
       <div className="welcome-container">
         <div className="image-container">
           <img
@@ -71,16 +65,6 @@ const HomePage: React.FunctionComponent<HomePageProps> = (props) => {
             alt="A doctor before a computer screen in the theatre "
             className="welcome-image"
           />
-          <img
-            src="https://media.istockphoto.com/id/1489422701/photo/adorable-caucasian-newborn-child-lying-in-hospital-bed-in-a-nursery-clinic-little-playful-and.jpg?s=612x612&w=0&k=20&c=vf3sgOxo7iKomZmeMyHUA5IQ7_kPifMxk5dM2Op06HM="
-            alt="A doctor before a computer screen in the theatre "
-            className="welcome-image"
-          />
-          <img
-            src="https://media.istockphoto.com/id/996271208/photo/in-the-hospital-close-up-shot-of-the-doctor-does-ultrasound-sonogram-procedure-to-a-pregnant.jpg?s=612x612&w=0&k=20&c=qGB0GGuVbiwCve6nws06B3LF57mGgOB9USgMJmjGGaE="
-            alt="A doctor before a computer screen in the theatre "
-            className="welcome-image"
-          />
         </div>
 
         <div className="welcome-text-section">
@@ -92,7 +76,9 @@ const HomePage: React.FunctionComponent<HomePageProps> = (props) => {
               family and friends
             </p>
           </div>
-          <button className="our-service-button">Our services</button>
+          <Link to="/how-it-works">
+            <button className="our-service-button">Our services</button>
+          </Link>
         </div>
       </div>
 
@@ -102,10 +88,12 @@ const HomePage: React.FunctionComponent<HomePageProps> = (props) => {
             className="icon"
             icon={faHouseMedicalCircleExclamation}
           />
-          <div className="search-hospital-paragraph">
-            <h3 className="icon-title"> Search Hospital</h3>
-            <p className="icon-paragraph">Find the best hospital </p>
-          </div>
+          <Link to="findCare" className="search-hospital-link">
+            <div className="search-hospital-paragraph">
+              <h3 className="icon-title"> Search Hospital</h3>
+              <p className="icon-paragraph">Find the best hospital </p>
+            </div>
+          </Link>
         </div>
         <div className="doctor-icon">
           <FontAwesomeIcon className="icon" icon={faUserDoctor} />
@@ -132,7 +120,6 @@ const HomePage: React.FunctionComponent<HomePageProps> = (props) => {
           </div>
         </div>
       </div>
-
       <h2 className="how-it-works-title">How it works</h2>
       <div className="how-it-works">
         <div className="how-it-works-find-hospital-container">
@@ -162,7 +149,7 @@ const HomePage: React.FunctionComponent<HomePageProps> = (props) => {
           </p>
         </div>
 
-        <div className="save-hospital-container">
+        <div className="book-hospital-container">
           <img
             className="save-hospital-image"
             src="https://media.istockphoto.com/id/636897342/photo/hispanic-business-women-on-phone-walking-in-a-rush.jpg?s=612x612&w=0&k=20&c=z2K4XpI4gzuVUr83FECJXR9Jz7oiqsAgwUbtdx_iH4U="
@@ -174,7 +161,7 @@ const HomePage: React.FunctionComponent<HomePageProps> = (props) => {
           </p>
         </div>
 
-        <div className="save-hospital-container">
+        <div className="visit-hospital-container">
           <img
             className="how-it-works-image"
             src="https://media.istockphoto.com/id/1400053534/photo/young-patient-in-a-consult-with-his-doctor-african-american-doctor-showing-a-patient-their.jpg?s=612x612&w=0&k=20&c=rOkv0N_1p-_q7Hz3TDLfzx11CIjHQpGIai93OH_tztw="
@@ -187,7 +174,6 @@ const HomePage: React.FunctionComponent<HomePageProps> = (props) => {
           </p>
         </div>
       </div>
-
       <h2 className="qualified-doctors-title">Qualified-doctors</h2>
       <div className="qualified-doctors-main">
         <div className="qualified-doctors-container">
@@ -196,60 +182,194 @@ const HomePage: React.FunctionComponent<HomePageProps> = (props) => {
               className="qualified-doctors"
               src="https://media.istockphoto.com/id/1201657177/photo/smiling-black-female-doctor-in-white-coat-posing-with-folded-arms.jpg?s=612x612&w=0&k=20&c=1SHhnT53JQ4acR4pNsRHHQXDUJCTAMI9Pg8-UG81Pao="
             />
+            <div className="doctors-description">
+              <p className="doctor-name">Doctor Sandra</p>
+              <p className="doctor-position">Pediatrician</p>
+              <p className="doctor-hospital">
+                Gwarinpa General Hospital, Abuja
+              </p>
+            </div>
+          </div>
+          <div>
             <img
               className="qualified-doctors"
               src="https://media.istockphoto.com/id/592647638/photo/skilled-in-saving-lives.jpg?s=612x612&w=0&k=20&c=EaO-CIpQqGMlY7M69CK4a0XzkQ5XNyaJIlz6PkTBKKY="
             />
+            <div className="doctors-description">
+              <p className="doctor-name">Doctor Sam</p>
+              <p className="doctor-position">Pediatrician</p>
+              <p className="doctor-hospital">
+                Gwarinpa General Hospital, Abuja
+              </p>
+            </div>
           </div>
+        </div>
+        <div className="qualified-doctors-container">
           <div>
             <img
               className="qualified-doctors"
               src="https://media.istockphoto.com/id/1362937229/photo/i-love-my-job.jpg?s=612x612&w=0&k=20&c=H-CFqvHFHKG7mXttyzpZ1vcg2Mfo0pTVX8S4vJd3ixA="
             />
+            <div className="doctors-description">
+              <p className="doctor-name">Doctor Alicia</p>
+              <p className="doctor-position">Pediatrician</p>
+              <p className="doctor-hospital">
+                Gwarinpa General Hospital, Abuja
+              </p>
+            </div>{" "}
+          </div>
+          <div>
             <img
               className="qualified-doctors"
               src="https://media.istockphoto.com/id/1203995945/photo/portrait-of-mature-male-doctor-wearing-white-coat-standing-in-hospital-corridor.jpg?s=612x612&w=0&k=20&c=Hk-dqLqHXyYa4aTqjieXNk9-HQSE8WEYUAjA1sXsy_s="
             />
+            <div className="doctors-description">
+              <p className="doctor-name">Doctor Andrew</p>
+              <p className="doctor-position">Pediatrician</p>
+              <p className="doctor-hospital">
+                Gwarinpa General Hospital, Abuja
+              </p>
+            </div>
           </div>
         </div>
 
-        <div className="book-appointment-form-section"> 
-         <div className="book-appointment-title"> Book an appointment</div>
+        <div className="book-appointment-form-section">
+          <div className="book-appointment-title"> Book an appointment</div>
           <form>
             <label>
-               <div>
-              <input className="book-appointment-input" type="text" name="name" placeholder="Address" />
+              <div>
+                <input
+                  className="book-appointment-input"
+                  type="text"
+                  name="name"
+                  placeholder="Address"
+                />
               </div>
               <div>
-              <input  className="book-appointment-input" type="text" name="name" placeholder="Choose hospital" />
+                <input
+                  className="book-appointment-input"
+                  type="text"
+                  name="name"
+                  placeholder="Choose hospital"
+                />
               </div>
               <div>
-              <input  className="book-appointment-input" type="text" name="name" placeholder="Choose Department" />
+                <input
+                  className="book-appointment-input"
+                  type="text"
+                  name="name"
+                  placeholder="Choose Department"
+                />
               </div>
               <div>
-              <input  className="book-appointment-input" type="text" name="name" placeholder="Enter Name" />
+                <input
+                  className="book-appointment-input"
+                  type="text"
+                  name="name"
+                  placeholder="Enter Name"
+                />
               </div>
               <div>
-              <input  className="book-appointment-input" type="text" name="name" placeholder="Enter Email" />
+                <input
+                  className="book-appointment-input"
+                  type="text"
+                  name="name"
+                  placeholder="Enter Email"
+                />
               </div>
               <div>
-              <input   className="book-appointment-input" type="text" name="name" placeholder="Select Date" />
+                <input
+                  className="book-appointment-input"
+                  type="text"
+                  name="name"
+                  placeholder="Select Date"
+                />
               </div>
               <div>
-              <input  className="book-appointment-input" type="text" name="name" placeholder="Select Time" />
+                <input
+                  className="book-appointment-input"
+                  type="text"
+                  name="name"
+                  placeholder="Select Time"
+                />
               </div>
             </label>
-            <input className="submit-appointment" type="submit" value="Submit" />
+
+            <button className="submit-appointment">Submit</button>
           </form>
         </div>
       </div>
 
       <div className="testimonials">
-        <h3 className="testimonials">testimonials</h3>
+        <div className="testimonials-titles">
+          <h3 className="testimonials-title">Testimonials</h3>
+          <h2 className="What-our-users-say">What our users say</h2>
+        </div>
+        <div className="testimony-blocks">
+          <div className="testimonies">
+            <p className="testimonies-texts">
+              Finding the right hospital has never been easier! With this
+              website, I was able to locate a nearby hospital quickly and
+              efficiently. The search feature is user-friendly, and it provided
+              me with all the essential information I needed. Highly recommended{" "}
+            </p>
+            <img
+              src="https://media.istockphoto.com/id/1400073992/photo/im-the-best-asset-in-my-business.jpg?s=612x612&w=0&k=20&c=ceAg_xBwNXyMI5gj3juImWQHVgUvRSCOsYoXMxN2Tv4="
+              alt="A portrait of random users"
+              className="testimonials-image"
+            />
+          </div>
+          <div className="testimonies">
+            <p className="testimonies-texts">
+              I can't express how grateful i am for carefinder website. When i
+              needed urgent medical care while travelling, it helped me locate
+              the nearest hospital in a matter of seconds. The accurate results
+              and detailed directions saved me valuable time and ensured i
+              received the care i needed{" "}
+            </p>
+            <img
+              src="https://media.istockphoto.com/id/1390893027/photo/portrait-of-a-senior-man-at-home.jpg?s=612x612&w=0&k=20&c=boVFST1awGr0D2ymVrMC5m-h0fb6Rm-6sTIVjIFJ1l4="
+              alt="A portrait of random users"
+              className="testimonials-image"
+            />
+          </div>
+          <div className="testimonies">
+            <p className="testimonies-texts">
+              I recently moved to a new city and had no idea where to go for
+              medical assistance, my friend shared me some hospital details
+              using the carefinder website. It made my life easier, i was able
+              to fine reputable hospitals near me effortlessly. The website's is
+              user friendly interface and comprehnsive search gave me peace of
+              mind. I highly recommend.{" "}
+            </p>
+            <img
+              src="https://media.istockphoto.com/id/1387840951/photo/portrait-of-attractive-beautiful-young-female-with-chubby-cheeks-and-curvy-body-posing-at.jpg?s=612x612&w=0&k=20&c=a483V9zNnXoD8lJzgcUoScrUhle15DQ0eQNZ-0zlT_8="
+              alt="A portrait of random users"
+              className="testimonials-image"
+            />
+          </div>
+        </div>
       </div>
 
-      <div className="care-finder">
-        <h3 className="care-finder">care-finder</h3>
+      <div className="footer-container">
+        <div className="footer-section">
+          <h3 className="contact-us-footer">Contact Us</h3>
+          <p>32 Crescent Gwarinpa, Abuja. Nigeria. +2348141715571</p>
+        </div>
+
+        <div className="footer-section">
+          <h3 className="about-us-footer">About Us</h3>
+          <p>News & Media</p>
+        </div>
+
+        <div className="footer-section">
+          <h3 className="quick-details-footer">Quick Links</h3>
+          <p>My account Book an appointment Library</p>
+        </div>
+
+        <div className="footer-note">
+          <p>&copy; {new Date().getFullYear()} Designed by c</p>
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,72 @@
+.how-it-works-find-hospital-container {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .how-it-works {
+    background-color: #256061;
+    border-radius: 50%;
+    min-height: 150px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    position: relative;
+    display: flex;
+    padding: 10px;
+  }
+
+  .how-it-works-title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: #2b7988;
+    font-size: 24px;
+  }
+
+  .how-it-works-image {
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+    left: 10px;
+    top: 5px;
+  }
+
+  .how-it-works-find-hospital-container {
+    width: 80%;
+    color: #fff;
+    margin-left: 10px;
+    text-align: center;
+  }
+
+  .how-it-works-find-hospital-title {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #fff;
+  }
+
+  .how-it-works-find-hospital-paragraph {
+    font-size: 10px;
+    width: 70%;
+  }
+
+  .save-hospital-image {
+    width: 40px;
+    border-radius: 50%;
+    margin-top: -10px;
+    position: relative;
+  }
+
+  .save-hospital-container {
+    color: #fff;
+    width: 80%;
+    text-align: center;
+  }
+
+  .save-hospital-title {
+    color: #fff;
+  }
+
+  .save-hospital-paragraph {
+    font-size: 10px;
+    width: 70%;
+  }
+}

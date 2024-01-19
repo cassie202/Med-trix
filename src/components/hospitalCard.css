@@ -1,0 +1,7 @@
+.hospital-card {
+  display: flex;
+  flex-direction: column;
+}
+.view-hospital-link {
+  text-decoration: none;
+}

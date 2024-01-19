@@ -1,0 +1,234 @@
+.search-hospital-input {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+.search-hospital-text {
+  font-weight: 400px;
+  text-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  color: #2b7988;
+  font-size: 48px;
+}
+.search-input {
+  padding: 10px 20px;
+  width: 800px;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  justify-content: center;
+  font-size: 16px;
+}
+.hospital-card {
+  margin: 50px;
+  border: 1px solid #2b7988;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+.hospital-name {
+  color: #2b7988;
+}
+.view-hospital {
+  background-color: #2b7988;
+  border: none;
+  width: 100px;
+  height: 50px;
+  border-radius: 50%;
+  color: #ffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hospital-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.hospital-card {
+  border: 1px solid black;
+  padding: 16px;
+  text-align: center;
+}
+
+.pagination-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-block: 50px;
+}
+.prev-btn {
+  background-color: #256061;
+  color: #ffff;
+  padding: 8px 10px;
+  border: none;
+  width: 100px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.next-btn {
+  margin-left: 5px;
+  background-color: #256061;
+  color: #ffff;
+  padding: 8px 10px;
+  border: none;
+  width: 100px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.download-btns {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.download-csv-btn {
+  margin: 10px;
+  padding: 10px 15px;
+  background-color: #2b7988;
+  border: 1px solid #2b7988;
+  cursor: pointer;
+  font-size: 18px;
+  color: #ffff;
+  border-radius: 50%;
+  width: 150px;
+  height: 50px;
+}
+.download-csv-btn:hover {
+  background-color: #ffff;
+  color: #2b7988;
+}
+
+.share-btn {
+  margin: 10px;
+  padding: 10px 15px;
+  background-color: #2b7988;
+  border: 1px solid #2b7988;
+  cursor: pointer;
+  font-size: 18px;
+  color: #ffff;
+  border-radius: 50%;
+  width: 150px;
+  height: 50px;
+}
+.share-btn:hover {
+  background-color: #ffff;
+  color: #2b7988;
+}
+
+@media only screen and (max-width: 600px) {
+  .search-hospital-input {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .search-hospital-text {
+    font-weight: 400;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    color: #2b7988;
+    font-size: 24px;
+  }
+
+  .search-input {
+    padding: 10px 15px;
+    margin: 0 auto;
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .hospital-card {
+    margin: 20px;
+    border: 1px solid #2b7988;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+  }
+
+  .hospital-name {
+    color: #2b7988;
+    font-size: 18px;
+  }
+
+  .view-hospital {
+    background-color: #2b7988;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    color: #ffff;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .hospital-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .pagination-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-block: 20px; /* Adjusted margin */
+  }
+
+  .prev-btn,
+  .next-btn {
+    background-color: #256061;
+    color: #ffff;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .download-btns,
+  .share-btn {
+    display: flex;
+    flex-direction: column; /* Changed flex direction to column for better stacking */
+    align-items: center;
+    margin: 20px;
+  }
+
+  .download-csv-btn,
+  .share-btn {
+    margin: 10px;
+    padding: 10px 15px;
+    background-color: #2b7988;
+    border: 1px solid #2b7988;
+    cursor: pointer;
+    font-size: 16px; /* Adjusted font size */
+    color: #ffff;
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .download-csv-btn:hover,
+  .share-btn:hover {
+    background-color: #ffff;
+    color: #2b7988;
+  }
+}

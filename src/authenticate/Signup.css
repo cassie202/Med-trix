@@ -1,0 +1,165 @@
+.signin-main {
+  background-image: linear-gradient(#2f7b8a, #81b5c0);
+  background-image: url("https://media.istockphoto.com/id/1021670950/photo/health-worker-holding-patients-hand.jpg?s=612x612&w=0&k=20&c=cBZCG4mSlGgq9mRMSzTBAXabd7kjSURnlF2aNGjtLtc=");
+  background-size: cover;
+  overflow: hidden;
+  text-align: center;
+  margin: 0;
+}
+.signin-container {
+  width: 400px;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #e0e4ec;
+  background-color: #ffff;
+  width: 400px;
+}
+.signup-title {
+  color: #256061;
+}
+.signin-input {
+  padding: 8px;
+  margin-bottom: 15px;
+  margin-top: 0;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  background-color: #ffff;
+  color: #393d45;
+  border: 1px solid black;
+  align-items: center;
+}
+.submit-signin {
+  border-radius: 5px;
+  border: none;
+  background-color: #328485;
+  color: #393d45;
+  padding: 6px 20px;
+  color: #ffff;
+  align-items: center;
+  width: 100%;
+  margin: 8px auto;
+  cursor: pointer;
+}
+.submit_google_signin {
+  padding: 8px 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  width: 500px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ffff;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.new-to-medtrix-container {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.new-to-med {
+  display: flex;
+  flex-direction: column;
+}
+.new-to-medtrix {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+  .signin-main {
+    background-image: linear-gradient(#2f7b8a, #81b5c0);
+    background-image: url("https://media.istockphoto.com/id/1021670950/photo/health-worker-holding-patients-hand.jpg?s=612x612&w=0&k=20&c=cBZCG4mSlGgq9mRMSzTBAXabd7kjSURnlF2aNGjtLtc=");
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
+    margin: 0;
+  }
+
+  .signin-container {
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #e0e4ec;
+    background-color: #ffff;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .signup-title {
+    color: #256061;
+  }
+
+  .signin-input {
+    padding: 8px;
+    margin-bottom: 15px;
+    margin-top: 0;
+    width: calc(100% - 16px);
+    border-radius: 5px;
+    border: none;
+    background-color: #ffff;
+    color: #393d45;
+    border: 1px solid black;
+    align-items: center;
+  }
+
+  .submit-signin {
+    border-radius: 5px;
+    border: none;
+    background-color: #328485;
+    color: #ffff;
+    padding: 6px 20px;
+    width: 100%;
+    margin: 8px auto;
+    cursor: pointer;
+  }
+
+  .submit_google_signin {
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: calc(100% - 16px);
+    border-radius: 5px;
+    border: none;
+    background-color: #ffff;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+
+  .new-to-medtrix-container {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .new-to-med {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .new-to-medtrix {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}

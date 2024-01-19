@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;400&display=swap");
+
 .home-container {
-  /* background-color: #dfe4eb; */
-  /* min-height: 100vh; */
+  background-color: #fbfbfb;
 }
 .hero-container {
   min-height: 400px;
+  margin-bottom: 50px;
   background-image: url("https://images.unsplash.com/photo-1533042789716-e9a9c97cf4ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aG9zcGl0YWwlMjBidWlsZGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60");
   background-size: "cover";
   background-repeat: repeat-x;
@@ -33,6 +35,10 @@
   margin-top: 25px;
   margin-inline: 40px;
 }
+.get-started-btn:hover {
+  background-color: #ffff;
+  color: #66a0ad;
+}
 .learn-more-btn {
   color: #ffff;
   display: block;
@@ -44,31 +50,7 @@
 .learn-more-btn:hover {
   color: blue;
 }
-.search-hospital-input {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-bottom: 0;
-}
-.search-hospital-text {
-  color: #ffff;
-  font-weight: 400px;
-  text-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
-}
-.search-input {
-  padding: 10px 10px;
-  width: 600px;
-  border-radius: 30px;
-  border: none;
-  margin: auto;
-  margin-bottom: 30px;
-  text-align: center;
-  justify-content: center;
-  background-color: #dfe4eb;
-}
-.search-hospital-text {
-  color: #2b7988;
-}
+
 .welcome-container {
   background-color: #fbfbfb;
   min-height: 100vh;
@@ -82,20 +64,22 @@
 .image-container {
   display: flex;
   margin-bottom: 0;
+  margin-top: 0;
 }
 .welcome-text-title {
   margin-top: 0;
   color: #2b7988;
+  font-size: 32px;
 }
 .welcome-text-paragraph {
   line-height: 1.5;
 }
 .welcome-image {
   margin-top: 300px;
-  width: 150px;
+  width: 210px;
 }
 .welcome-text-section {
-  margin-top: 50px;
+  margin-top: 80px;
   display: flex;
   text-align: center;
   justify-content: space-around;
@@ -113,8 +97,12 @@
   font-weight: bold;
   cursor: pointer;
 }
-.icon-container {
+.our-service-button:hover {
+  color: #256061;
   background-color: #ffff;
+  border: 2px solid #256061;
+}
+.icon-container {
   min-height: 100px;
   margin-top: 300px;
   display: flex;
@@ -146,31 +134,43 @@
   border-radius: 10px;
 }
 .icon-title {
+  text-decoration: none;
 }
 .search-hospital-paragraph {
   padding: 20px;
+  text-decoration: none;
+  color: #000000;
 }
 .icon-paragraph {
   font-size: 12px;
   font-weight: small;
+  text-decoration: none;
+}
+.search-hospital-link {
+  text-decoration: none;
 }
 .how-it-works {
-  background-color: #393d45;
-  border-radius: 50%;
+  background-color: #256061;
   min-height: 200px;
   margin-top: 30px;
   margin-bottom: 100px;
   position: relative;
   display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-item: space-between;
+  align-items: center;
+  padding: 20px;
 }
 .how-it-works-title {
   text-align: center;
   margin-top: 100px;
   margin-bottom: 0;
+  color: #2b7988;
+  font-size: 32px;
 }
 .how-it-works-image {
   width: 70px;
-  /* height: 70px; */
   border-radius: 50%;
   position: relative;
   left: 30;
@@ -185,7 +185,7 @@
 .how-it-works-find-hospital-title {
   margin-bottom: 2px;
   margin-top: 2px;
-  color: #2b7988;
+  color: #fffff;
 }
 .how-it-works-find-hospital-paragraph {
   font-size: 12px;
@@ -202,53 +202,88 @@
   width: 300px;
   text-align: center;
 }
+.book-hospital-container {
+  color: #ffff;
+  width: 300px;
+  text-align: center;
+}
+.visit-hospital-container {
+  color: #ffff;
+  width: 300px;
+  text-align: center;
+}
 .save-hospital-title {
-  color: #2b7988;
+  color: #ffff;
 }
 .save-hospital-paragraph {
   font-size: 12px;
   width: 250px;
 }
 .qualified-doctors-title {
-  margin-left: 100px;
+  margin-left: 300px;
+  color: #2b7988;
+  text-align: left;
+  font-size: 32px;
 }
 .qualified-doctors-main {
   display: flex;
   justify-content: space-around;
   min-height: 100px;
-  margin-top: 0;
+  margin-top: 50;
+  margin-bottom: 100px;
 }
 .qualified-doctors-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
+  margin-bottom: 0;
+  width: 500px;
 }
 .qualified-doctors {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  padding: 50px;
+  padding: 10px;
+  margin-bottom: 0;
+}
+.doctors-description {
+  margin-top: 0;
+  line-height: 1;
+  font-size: 14px;
+  padding: 30px;
+}
+.doctor-name {
+  margin-top: 0;
+  color: #2b7988;
+  font-size: 17px;
+}
+.doctor-hospital {
+  margin: 7px;
 }
 .book-appointment-form-section {
-  width: 500px;
+  width: 600px;
+  margin-left: 50px;
 }
 .book-appointment-title {
   background-color: #256061;
   color: #ffff;
   margin-bottom: 10px;
-  padding: 10px 35px;
+  margin-left: 15px;
+  padding: 10px 15px;
   width: 50%;
   border-radius: 8px;
   border: none;
+  text-align: center;
 }
 .book-appointment-input {
   padding: 10px 30px;
-  margin: 5px;
+  margin: 10px;
   width: 50%;
   border-radius: 8px;
   border: none;
   background-color: #e0e4ec;
+  color: #393d45;
 }
 .submit-appointment {
   background-color: #256061;
@@ -257,17 +292,436 @@
   width: 50%;
   border-radius: 8px;
   border: none;
-  justify-content: center;
-  text-align: center;
+  margin-top: 10px;
+  margin-left: 40px;
   align-items: center;
+  cursor: pointer;
 }
 .testimonials {
-  background-color: #fbfbfb;
-  min-height: 100vh;
+  min-height: 70vh;
   margin-top: 0;
 }
-.care-finder {
-  background-color: #393d45;
+.testimonials-titles {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #393d45;
+  font-size: 18px;
+}
+.testimonials-title {
+  font-size: 32px;
+  color: #2b7988;
+}
+.testimony-blocks {
+  display: flex;
+  justify-content: space-around;
   min-height: 100px;
-  margin-top: 0;
+}
+.testimonies {
+  background-color: #dfe4eb;
+  width: 200px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+}
+.testimonies-texts {
+  line-height: 1.5;
+  color: #393d45;
+  font-size: 14px;
+}
+.testimonials-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 60%;
+}
+.footer-container {
+  background-color: #256061;
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 14px;
+}
+
+.footer-note {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.footer-note p {
+  font-size: 12px;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+  @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;400&display=swap");
+
+  .home-container {
+    background-color: #fbfbfb;
+  }
+
+  .hero-container {
+    min-height: 300px;
+    margin-bottom: 20px;
+    background-image: url("https://images.unsplash.com/photo-1533042789716-e9a9c97cf4ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aG9zcGl0YWwlMjBidWlsZGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .hero-text {
+    color: white;
+    font-weight: 400;
+    width: 100%;
+    padding: 20px;
+    line-height: 1.2;
+  }
+
+  .hero-paragraph {
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .get-started-btn {
+    background-color: #66a0ad;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 10px;
+  }
+
+  .get-started-btn:hover {
+    background-color: #fff;
+    color: #66a0ad;
+  }
+
+  .learn-more-btn {
+    color: #fff;
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    text-decoration: none;
+  }
+
+  .learn-more-btn:hover {
+    color: blue;
+  }
+
+  .welcome-container {
+    background-color: #fbfbfb;
+    min-height: 100vh;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .welcome-text-title {
+    margin-top: 10px;
+    color: #2b7988;
+    font-size: 24px;
+  }
+
+  .welcome-text-paragraph {
+    line-height: 1.5;
+  }
+
+  .welcome-image {
+    margin-top: 20px;
+    width: 150px;
+  }
+
+  .welcome-text-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .welcome-text-container {
+    width: 100%;
+  }
+
+  .our-service-button {
+    padding: 8px 12px;
+    background-color: #256061;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+  }
+
+  .our-service-button:hover {
+    color: #256061;
+    background-color: #fff;
+    border: 2px solid #256061;
+  }
+
+  .icon-container {
+    min-height: 50px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .icon {
+    margin-top: 5px;
+  }
+
+  .hospital-icon,
+  .doctor-icon,
+  .export-icon,
+  .share-icon {
+    background-color: #dfe4eb;
+    width: 100px;
+    border-radius: 10px;
+  }
+
+  .icon-title {
+    text-decoration: none;
+  }
+
+  .search-hospital-paragraph {
+    padding: 10px;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .icon-paragraph {
+    font-size: 10px;
+    font-weight: small;
+    text-decoration: none;
+  }
+
+  .search-hospital-link {
+    text-decoration: none;
+  }
+
+  .how-it-works {
+    background-color: #256061;
+    border-radius: 50%;
+    min-height: 150px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    position: relative;
+    display: flex;
+    padding: 10px;
+  }
+
+  .how-it-works-title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: #2b7988;
+    font-size: 24px;
+  }
+
+  .how-it-works-image {
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+    left: 10px;
+    top: 5px;
+  }
+
+  .how-it-works-find-hospital-container {
+    width: 80%;
+    color: #fff;
+    margin-left: 10px;
+    text-align: center;
+  }
+
+  .how-it-works-find-hospital-title {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #fff;
+  }
+
+  .how-it-works-find-hospital-paragraph {
+    font-size: 10px;
+    width: 70%;
+  }
+
+  .save-hospital-image {
+    width: 40px;
+    border-radius: 50%;
+    margin-top: -10px;
+    position: relative;
+  }
+
+  .save-hospital-container {
+    color: #fff;
+    width: 80%;
+    text-align: center;
+  }
+
+  .save-hospital-title {
+    color: #fff;
+  }
+
+  .save-hospital-paragraph {
+    font-size: 10px;
+    width: 70%;
+  }
+
+  .qualified-doctors-title {
+    margin-left: 10px;
+    color: #2b7988;
+    text-align: left;
+    font-size: 24px;
+  }
+
+  .qualified-doctors-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .qualified-doctors-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 45%;
+  }
+
+  .qualified-doctors {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 5px;
+    margin-bottom: 0;
+  }
+
+  .doctors-description {
+    margin-top: 0;
+    line-height: 1;
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .doctor-name {
+    margin-top: 0;
+    color: #2b7988;
+    font-size: 14px;
+  }
+
+  .book-appointment-form-section {
+    width: 80%;
+    margin-left: 10px;
+  }
+
+  .book-appointment-title {
+    background-color: #256061;
+    color: #fff;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    padding: 5px 10px;
+    width: 50%;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+  }
+
+  .book-appointment-input {
+    padding: 5px 15px;
+    margin: 5px;
+    width: 50%;
+    border-radius: 8px;
+    border: none;
+    background-color: #e0e4ec;
+    color: #393d45;
+  }
+
+  .submit-appointment {
+    background-color: #256061;
+    color: #fff;
+    padding: 5px 18px;
+    width: 50%;
+    border-radius: 8px;
+    border: none;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  .testimonials {
+    min-height: 50vh;
+    margin-top: 0;
+  }
+
+  .testimonials-titles {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #393d45;
+    font-size: 14px;
+  }
+
+  .testimonials-title {
+    font-size: 24px;
+    color: #2b7988;
+  }
+
+  .testimony-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 50px;
+  }
+
+  .testimonies {
+    background-color: #dfe4eb;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .testimonies-texts {
+    line-height: 1;
+    color: #393d45;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .testimonials-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 60%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-note {
+    order: 4;
+  }
+
+  .contact-us-footer,
+  .about-us-footer,
+  .quick-details-footer {
+    font-size: 14px;
+    cursor: pointer;
+  }
 }
