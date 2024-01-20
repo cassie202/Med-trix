@@ -30,21 +30,22 @@ const SignupPage: React.FC = () => {
     e.preventDefault();
     const { email, password } = formData;
     createUserWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
+      .then(() => {
         navigate("/findCare");
-        console.log("userCredential", userCredential);
       })
       .catch((error) => {
-        console.log("error", error);
+        console.log(error);
       });
   };
   const googleSignUp = () => {
     const provider = new GoogleAuthProvider();
     signInWithPopup(auth, provider)
       .then((result: any) => {
-        const user = result.user;
+        result.user;
       })
-      .catch((error) => {});
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   return (
