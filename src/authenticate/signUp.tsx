@@ -41,7 +41,7 @@ const SignupPage: React.FC = () => {
     const provider = new GoogleAuthProvider();
     signInWithPopup(auth, provider)
       .then((result: any) => {
-        result.user;
+        return result.user;
       })
       .catch((error) => {
         console.log(error);

@@ -24,7 +24,11 @@ const HospitalDetails: React.FC = () => {
       <NavBar />
       <div className="hospital-detail-container">
         <Link to="/findcare">
-          <img src={arrowImg} className="arrow-back-img" />
+          <img
+            src={arrowImg}
+            alt="A left arrow icon"
+            className="arrow-back-img"
+          />
         </Link>
         <div className="hospital-detail-img">
           <img
