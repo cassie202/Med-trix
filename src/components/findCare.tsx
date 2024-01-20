@@ -4,27 +4,18 @@ import "./findCare.css";
 import HospitalCard from "./hospitalCard";
 import { hospitalList } from "../helpers/hospitalList";
 
-export interface FindCarePageProps {
-  onSearch: (searchTerm: string) => void;
-}
-
-interface Hospital {
-  name: string;
-  address: string;
-  state: string;
-}
+export interface FindCarePageProps {}
 
 const hospitalsPerPage = 10;
 
-const FindCarePage: React.FC<FindCarePageProps> = ({ onSearch }) => {
+const FindCarePage: React.FC<FindCarePageProps> = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [currentPage, setCurrentPage] = useState<number>(0);
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const newSearchTerm = event.target.value;
     setSearchTerm(newSearchTerm);
-    onSearch(newSearchTerm);
-    setCurrentPage(0); // Reset the page when the search term changes
+    setCurrentPage(0);
   };
 
   const handleNextPage = () => {
@@ -45,16 +36,12 @@ const FindCarePage: React.FC<FindCarePageProps> = ({ onSearch }) => {
 
   function convertArrayOfObjectsToCSV(array: any[]) {
     let result = "";
-
-    // Extract headers
     const columnDelimiter = ",";
     const lineDelimiter = "\n";
     const keys = Object.keys(array[0]);
 
     result += keys.join(columnDelimiter);
     result += lineDelimiter;
-
-    // Extract content
     array.forEach((item: { [x: string]: string }) => {
       let ctr = 0;
       keys.forEach((key) => {
