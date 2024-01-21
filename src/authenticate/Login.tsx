@@ -1,9 +1,8 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import "firebase/auth";
-import { auth, app } from "../firebase_setup/Config";
+import { auth } from "../firebase_setup/Config";
 import "./Login.css";
 import NavBar from "../components/Nav";
-import SignupPage from "./SignUp";
 import { Link } from "react-router-dom";
 import {
   GoogleAuthProvider,
@@ -15,7 +14,7 @@ import { useNavigate } from "react-router-dom";
 const LoginPage: React.FC = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState<string | null>(null);
+  // const [error, setError] = useState<string | null>(null);
   let navigate = useNavigate();
 
   const handleLogin = async (e: React.FormEvent) => {
@@ -34,7 +33,7 @@ const LoginPage: React.FC = () => {
     const provider = new GoogleAuthProvider();
     signInWithPopup(auth, provider)
       .then((result: any) => {
-        const user = result.user;
+        return result.user;
 
         navigate("/findCare");
       })
@@ -82,7 +81,7 @@ const LoginPage: React.FC = () => {
             </Link>
           </div>
         </div>
-        {error && <p style={{ color: "red" }}>{error}</p>}
+        {/* {error && <p style={{ color: "red" }}>{error}</p>} */}
       </div>
     </div>
   );

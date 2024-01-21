@@ -1,18 +1,17 @@
 import React from "react";
-import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 import NavBar from "./Nav";
 import "./Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faSearch,
+  // faSearch,
   faHouseMedicalCircleExclamation,
   faUserDoctor,
   faFileExport,
   faShare,
 } from "@fortawesome/free-solid-svg-icons";
 
-export interface HomePageProps {}
+export interface HomePageProps { }
 
 const HomePage: React.FunctionComponent<HomePageProps> = (props) => {
   return (
@@ -181,6 +180,7 @@ const HomePage: React.FunctionComponent<HomePageProps> = (props) => {
             <img
               className="qualified-doctors"
               src="https://media.istockphoto.com/id/1201657177/photo/smiling-black-female-doctor-in-white-coat-posing-with-folded-arms.jpg?s=612x612&w=0&k=20&c=1SHhnT53JQ4acR4pNsRHHQXDUJCTAMI9Pg8-UG81Pao="
+              alt = "A medical doctor"
             />
             <div className="doctors-description">
               <p className="doctor-name">Doctor Sandra</p>
@@ -194,6 +194,7 @@ const HomePage: React.FunctionComponent<HomePageProps> = (props) => {
             <img
               className="qualified-doctors"
               src="https://media.istockphoto.com/id/592647638/photo/skilled-in-saving-lives.jpg?s=612x612&w=0&k=20&c=EaO-CIpQqGMlY7M69CK4a0XzkQ5XNyaJIlz6PkTBKKY="
+              alt = "A medical doctor"
             />
             <div className="doctors-description">
               <p className="doctor-name">Doctor Sam</p>
@@ -209,6 +210,7 @@ const HomePage: React.FunctionComponent<HomePageProps> = (props) => {
             <img
               className="qualified-doctors"
               src="https://media.istockphoto.com/id/1362937229/photo/i-love-my-job.jpg?s=612x612&w=0&k=20&c=H-CFqvHFHKG7mXttyzpZ1vcg2Mfo0pTVX8S4vJd3ixA="
+              alt = "A medical doctor"
             />
             <div className="doctors-description">
               <p className="doctor-name">Doctor Alicia</p>
@@ -222,6 +224,7 @@ const HomePage: React.FunctionComponent<HomePageProps> = (props) => {
             <img
               className="qualified-doctors"
               src="https://media.istockphoto.com/id/1203995945/photo/portrait-of-mature-male-doctor-wearing-white-coat-standing-in-hospital-corridor.jpg?s=612x612&w=0&k=20&c=Hk-dqLqHXyYa4aTqjieXNk9-HQSE8WEYUAjA1sXsy_s="
+              alt = "A medical doctor"
             />
             <div className="doctors-description">
               <p className="doctor-name">Doctor Andrew</p>
