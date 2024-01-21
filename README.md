@@ -11,10 +11,10 @@ The goal of this project is to access healthcare in Nigeria speedily. Before now
 
 ### How does it work?
 
-As a user, you will sign up with your Email and password or with Google. When logged in, you can access hospitals by going to "Find Care" page to type your state. once you see a convenient one, you can download it as CSV File or copy the link to save any where.The App is intuitive and easy to use and navigate even by first users
+As a user, you will sign up with your Email and password or with a Google account. When logged in, you can find hospitals within your state by typing your state on the search box in "Find Care page'. Once you see your choice hospital, you can download the list via csv file-type by clicking the download button. You can also copy the link of the list. This App is intuitive and easy to navigate even as a first user.
 
 ### Check out an example
 
-Check out a video demo of the example app here: [iNeedToBuy.xyz](https://app.ineedtobuy.xyz/) 
+Check out a video demo of the example app here: [Med-trix](https://med-trix.netlify.app/) 
 
 <hr>
