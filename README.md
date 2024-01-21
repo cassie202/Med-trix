@@ -15,6 +15,6 @@ As a user, you will sign up with your Email and password or with a Google accoun
 
 ### Check out an example
 
-Check out a video demo of the example app here: [Med-trix](https://med-trix.netlify.app/) 
+Check out the app here: [Med-trix](https://med-trix.netlify.app/) 
 
 <hr>
