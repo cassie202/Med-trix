@@ -57,7 +57,7 @@ const FindCarePage: React.FC<FindCarePageProps> = () => {
   }
   const copyToClipboard = () => {
     navigator.clipboard
-      .writeText("http://localhost:3000/findCare")
+      .writeText("https://med-trix.netlify.app/findCare")
       .then(() => {
         alert("Link copied to clipboard!");
       })
