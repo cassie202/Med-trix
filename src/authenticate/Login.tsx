@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import "firebase/auth";
 import { auth, app } from "../firebase_setup/Config";
 import "./Login.css";
-import NavBar from "../components/nav";
+import NavBar from "../components/Nav";
 import SignupPage from "./SignUp";
 import { Link } from "react-router-dom";
 import {

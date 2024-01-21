@@ -1,8 +1,8 @@
 // HospitalCard.tsx
 import React from "react";
-import "./hospitalCard.css";
+import "./HospitalCard.css";
 import { Link } from "react-router-dom";
-import "./findCare.css";
+import "./FindCare.css";
 
 interface Hospital {
   name: string;

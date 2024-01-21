@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
-import NavBar from "./nav";
-import "./home.css";
+import NavBar from "./Nav";
+import "./Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSearch,

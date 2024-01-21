@@ -1,12 +1,12 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from "./components/home";
-import AboutPage from "./components/about";
-import FindCarePage from "./components/findCare";
+import HomePage from "./components/Home";
+import AboutPage from "./components/About";
+import FindCarePage from "./components/FindCare";
 import SignupPage from "./authenticate/SignUp";
 import LoginPage from "./authenticate/Login";
-import HowItWorks from "./components/howItWorks";
-import HospitalDetails from "./components/hospitalDetail";
+import HowItWorks from "./components/HowItWorks";
+import HospitalDetails from "./components/HospitalDetail";
 
 export interface AppProps {}
 

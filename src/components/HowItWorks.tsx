@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "./nav";
 import { Link } from "react-router-dom";
-import "./howItWorks.css";
+import "./HowItWorks.css";
 
 export interface HowItWorksProps {}
 

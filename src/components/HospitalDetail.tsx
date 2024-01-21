@@ -1,10 +1,10 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { hospitalList } from "../helpers/hospitalList";
-import "./hospitalDetail.css";
-import NavBar from "./nav";
+import "./HospitalDetail.css";
+import NavBar from "./Nav";
 import { Link } from "react-router-dom";
-import "./home.css";
+import "./Home.css";
 import arrowImg from "../assets/arrow-back.png";
 
 const HospitalDetails: React.FC = () => {

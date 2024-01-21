@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import NavBar from "./nav";
-import "./findCare.css";
-import HospitalCard from "./hospitalCard";
+import NavBar from "./Nav";
+import "./FindCare.css";
+import HospitalCard from "./HospitalCard";
 import { hospitalList } from "../helpers/hospitalList";
 
 export interface FindCarePageProps {}

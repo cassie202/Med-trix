@@ -1,6 +1,6 @@
 import React from "react";
-import NavBar from "./nav";
-import "./about.css";
+import NavBar from "./Nav";
+import "./About.css";
 
 export interface AboutPageProps {}
 
