@@ -1,5 +1,3 @@
-// src/components/HospitalList.tsx
-
 import React from "react";
 import { getAuth } from "firebase/auth";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
@@ -10,7 +8,6 @@ const HospitalListPage: React.FC = () => {
   return (
     <div>
       <h1>Hospital List</h1>
-      {/* <button onClick={exportToCsv}>Export to CSV</button> */}
       <table>
         <thead>
           <tr>
