@@ -32,9 +32,7 @@ const LoginPage: React.FC = () => {
   const googleSignIn = () => {
     const provider = new GoogleAuthProvider();
     signInWithPopup(auth, provider)
-      .then((result: any) => {
-        return result.user;
-
+      .then(() => {
         navigate("/findCare");
       })
       .catch((error) => {});
